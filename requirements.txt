@@ -1,0 +1,7 @@
+Flask
+Flask-SQLAlchemy
+SQLAlchemy
+pyodbc
+requests
+pytest
+pymysql

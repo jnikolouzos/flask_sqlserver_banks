@@ -1,0 +1,29 @@
+<!-- templates/bank_edit.html -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Edit Bank</h1>
+  <form method="post">
+    <div>
+      <label for="name">Name:</label>
+      <input
+        id="name"
+        name="name"
+        type="text"
+        value="{{ bank.name }}"
+        required
+      />
+    </div>
+    <div>
+      <label for="location">Location:</label>
+      <input
+        id="location"
+        name="location"
+        type="text"
+        value="{{ bank.location }}"
+        required
+      />
+    </div>
+    <button type="submit">Save Changes</button>
+  </form>
+{% endblock %}

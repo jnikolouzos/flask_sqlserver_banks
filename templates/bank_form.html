@@ -1,0 +1,17 @@
+<!-- templates/bank_form.html -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Add New Bank</h1>
+  <form method="post">
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" name="name" type="text" required />
+    </div>
+    <div>
+      <label for="location">Location:</label>
+      <input id="location" name="location" type="text" required />
+    </div>
+    <button type="submit">Create Bank</button>
+  </form>
+{% endblock %}

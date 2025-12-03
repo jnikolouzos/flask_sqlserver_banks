@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Bank" uuid="ab12aeb7-ac94-44f8-a6ad-8bc57800c8a8">
+      <driver-ref>sqlserver.localdb.jtds</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>net.sourceforge.jtds.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:jtds:sqlserver://./BankDB</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <driver-properties>
+        <property name="INSTANCE" value="Laptop\SQLEXPRESS" />
+        <property name="SERVERNAME" value="Laptop\SQLEXPRESS" />
+      </driver-properties>
+    </data-source>
+    <data-source source="LOCAL" name="mariaDB" uuid="ab37882c-f7a9-4f73-a639-d2ae6af53a3e">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://localhost:3306/BankDB</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

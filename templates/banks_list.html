@@ -1,0 +1,19 @@
+<!-- templates/banks_list.html -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>All Banks</h1>
+  {% if banks %}
+    <ul>
+      {% for bank in banks %}
+        <li>
+          <a href="{{ url_for('bank_detail', bank_id=bank.id) }}">
+            {{ bank.name }} ({{ bank.location }})
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No banks found. <a href="{{ url_for('create_bank') }}">Add one</a>.</p>
+  {% endif %}
+{% endblock %}
