@@ -4,4 +4,4 @@ SQLAlchemy
 pyodbc
 requests
 pytest
-pymysql
+pre-commit
