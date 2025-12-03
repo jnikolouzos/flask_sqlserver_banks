@@ -1,0 +1,46 @@
+repos:
+  # --- BLACK (Auto-formatter) ---
+  - repo: https://github.com/psf/black
+    rev: 24.1.1       # latest stable
+    hooks:
+      - id: black
+        language_version: python3
+
+  # --- ISORT (Import sorting) ---
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        name: isort (python)
+
+  # --- FLAKE8 (Linting) ---
+  - repo: https://github.com/pycqa/flake8
+    rev: 6.1.0
+    hooks:
+      - id: flake8
+        additional_dependencies: [
+          "flake8-bugbear",
+          "flake8-comprehensions",
+        ]
+
+  # --- PYLINT (Optional but strict) ---
+  - repo: https://github.com/pycqa/pylint
+    rev: v3.0.3
+    hooks:
+      - id: pylint
+        name: pylint
+        entry: pylint
+        language: system
+        types: [python]
+        args:
+          - "--disable=C0114,C0115,C0116"   # disable docstring warnings
+          - "--max-line-length=88"
+
+  # --- END-OF-FILE fixer ---
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: end-of-file-fixer
+
+  # --- Trailing whitespace cleanup ---
+      - id: trailing-whitespace
