@@ -18,7 +18,7 @@ It provides:
   (e.g. `ODBC Driver 17 for SQL Server`).
 
 ## 2. Database Initialization (SQL Server)
-
+### SQL Server
 1. Open SQL Server Management Studio or any SQL client.
 2. Run the script `db_init.sql`:
 
@@ -33,3 +33,16 @@ CREATE TABLE Banks (
     location NVARCHAR(100) NOT NULL
 );
 GO
+```
+### MariaDB
+1. Run MariaDB
+2. Run the script `db_init_mariaDB.sql`:
+
+```sql
+CREATE DATABASE BankDB;
+CREATE TABLE Banks (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    location VARCHAR(100) NOT NULL
+) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
