@@ -1,4 +1,4 @@
-# Flask + SQL Server Banks CRUD Application
+# CRUD application using Flask
 
 This project is a simple CRUD (Create, Read, Update, Delete) application built
 with **Flask** and **Microsoft SQL Server** for managing **banks**.
