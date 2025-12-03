@@ -46,3 +46,12 @@ CREATE TABLE Banks (
     location VARCHAR(100) NOT NULL
 ) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
+## 3. Set the DATABASE_URL
+For SQL Server
+```
+export DATABASE_URL="mssql+pyodbc://username:password@localhost:1433/BankDB?driver=ODBC+Driver+17+for+SQL+Server"
+```
+For MariaDB
+```
+export DATABASE_URL=mysql+pymysql://username:password@localhost:3306/BankDB;PYTHONUNBUFFERED=1
+```
